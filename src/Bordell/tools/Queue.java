@@ -1,10 +1,19 @@
-package Bordell;
+package Bordell.tools;
 import javax.swing.DefaultListModel<E>;
 
 public class Queue {
-    public void enqueue (){
-    
+    private DefaultListModel model;
+
+    public Queue(DefaultListModel list){
+        model = list;
     }
+    // pre:
+    // post:
+    public void enqueue (void e){
+            
+    }
+    // pre:
+    // post:
     public void get(){
     
     }
