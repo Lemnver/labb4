@@ -6,6 +6,8 @@ public class Customer {
     private int kramar;
     private int xxx;
 
+    // pre: pussar_count >= 0; kramar_count >= 0;  xxx_count >= 0;
+    // post: 
     public Customer (String custName, int pussar_count, int kramar_count, int xxx_count){
         name = custName;
         pussar = pussar_count;
