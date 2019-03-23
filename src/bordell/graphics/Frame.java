@@ -1,5 +1,5 @@
 package bordell.graphics;
-import jawax.swing.JFrame;
+import javax.swing.JFrame;
 
 public class Frame extends JFrame {
 

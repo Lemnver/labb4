@@ -1,5 +1,5 @@
 package bordell.graphics;
-import jawax.swing.JPanel;
+import javax.swing.JPanel;
 
 public class Panel extends JPanel {
     
