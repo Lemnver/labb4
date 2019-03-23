@@ -1,6 +1,6 @@
-package Bordell.tools;
+package bordell.tools;
 import javax.swing.DefaultListModel;
-import Bordell.tools.Customer;
+import bordell.tools.Customer;
 
 public class Queue {
     private DefaultListModel<Customer> model;

@@ -1,4 +1,4 @@
-package Bordell.tools;
+package bordell.tools;
 
 public class Customer {
     private String name;
