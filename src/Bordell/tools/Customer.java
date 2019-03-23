@@ -14,13 +14,19 @@ public class Customer {
         kramar = kramar_count;
         xxx = xxx_count;
     }
-    public int getPussar() {
+    public String getName(){
+        return name;
+    }
+    public int getPussar(){
         return pussar;
     }
-    public int getKramar() {
+    public int getKramar(){
         return kramar;
     }
-    public int getxxx() {
+    public int getxxx(){
         return xxx;
+    }
+    public String toString(){
+        return name;
     }
 }
