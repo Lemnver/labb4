@@ -1,4 +1,4 @@
-import Bordell.tools;
+package Bordell.tools;
 
 public class Customer {
     private String name;
