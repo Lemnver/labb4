@@ -76,5 +76,8 @@ public class LobbyPanel extends JPanel {
             queue.enqueue(cust);
         }
     }
+    public DefaultListModel<Customer> getModel(){
+        return model;
+    }
 
 }
