@@ -12,7 +12,8 @@ public class MasterPanel extends JPanel {
     public MasterPanel() {
         // panel for the queues
         q_panel = new QueuePanel();
-        q_panel.setLayout(new BoxLayout(q_panel, BoxLayout.Y_AXIS));
+        q_panel.setLayout(new BoxLayout(q_panel, BoxLayout.X_AXIS));
+        this.add(q_panel);
         // panel for the lobby
         lobby_panel = new LobbyPanel(q_panel);
         lobby_panel.setLayout(new FlowLayout());

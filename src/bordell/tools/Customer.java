@@ -23,7 +23,7 @@ public class Customer {
     public int getKramar(){
         return kramar;
     }
-    public int getxxx(){
+    public int getXXX(){
         return xxx;
     }
     public String toString(){
