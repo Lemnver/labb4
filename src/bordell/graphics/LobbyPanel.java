@@ -20,15 +20,17 @@ public class LobbyPanel extends JPanel {
 
     public LobbyPanel(QueuePanel queue_panel){
         qpanel = queue_panel;
-
+        
         String lobbyLabel = "Lobby";
         JLabel label = new JLabel(lobbyLabel);
         
+        // create scrollable JList
         model = new DefaultListModel<Customer>();
         model.add(0, new Customer("Edna", 1, 2, 3));
         list = new JList(model);
         JScrollPane pane = new JScrollPane(list);
         
+        // create buttons for sending selected customer to button assigned queue
         JButton buttonQ1 = new JButton("Queue 1");
 		buttonQ1.addActionListener(new ActionListener(){
 					public void actionPerformed(ActionEvent e){
@@ -52,6 +54,8 @@ public class LobbyPanel extends JPanel {
         this.add(bPane);
     }
 
+    // pre: index > 0, model.size() - 1 => index
+    // post: customer moved to first queue 
     public void addToFirstQueue(int index){
         // moves selected customer to the first queue
         if (list.getSelectedIndex() != -1){
@@ -61,7 +65,8 @@ public class LobbyPanel extends JPanel {
             queue.enqueue(cust);
         }
     }
-
+    // pre: index > 0, model.size() - 1 => index
+    // post: customer moved to second queue 
     public void addToSecondQueue(int index){
         // moves selected customer to the second queue
         if (list.getSelectedIndex() != -1){
