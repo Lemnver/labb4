@@ -60,7 +60,10 @@ public class QueuePanel extends SubPanel {
         this.add(qpanel2);
         this.repaint();
     }
+    // pre:
+    // post: Queue.pop();
     public void serveCustomer(Queue queue){
+        // removes customer from Queue
         Customer cust = queue.pop(); 
         String title = "Customer Served";
         String message = "Name: " + cust.getName() + 
@@ -68,5 +71,11 @@ public class QueuePanel extends SubPanel {
             "\nKramar" + cust.getKramar() + 
             "\nXXX: " + cust.getXXX();
         JOptionPane.showMessageDialog(null, message, title, JOptionPane.ERROR_MESSAGE);
+    }
+    public Queue getFirstQueue (){
+        return queue1;
+    }
+    public Queue getSecondQueue (){
+        return queue2;
     }
 }

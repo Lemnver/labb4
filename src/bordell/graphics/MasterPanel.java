@@ -13,12 +13,14 @@ public class MasterPanel extends JPanel {
         // panel for the queues
         q_panel = new QueuePanel();
         q_panel.setLayout(new BoxLayout(q_panel, BoxLayout.X_AXIS));
-        this.add(q_panel);
         // panel for the lobby
         lobby_panel = new LobbyPanel(q_panel);
-        lobby_panel.setLayout(new FlowLayout());
+        lobby_panel.setLayout(new BoxLayout(lobby_panel, BoxLayout.Y_AXIS));
         // panel for creating Customers
         cust_panel = new CustomerPanel(lobby_panel);
         cust_panel.setLayout(new BoxLayout(cust_panel, BoxLayout.Y_AXIS));
+        this.add(cust_panel);
+        this.add(lobby_panel);
+        this.add(q_panel);
     }
 }
