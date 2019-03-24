@@ -38,7 +38,7 @@ public class LobbyPanel extends JPanel {
         JButton buttonQ2 = new JButton("Queue 2");
 		buttonQ2.addActionListener(new ActionListener(){
 					public void actionPerformed(ActionEvent e){
-						addToFirstQueue(list.getSelectedIndex());
+						addToSecondQueue(list.getSelectedIndex());
 					}
 				});        
         // bPane holds the buttons to make sure they are horizontal under the list
