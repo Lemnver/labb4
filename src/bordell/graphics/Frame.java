@@ -1,6 +1,7 @@
 package bordell.graphics;
 import bordell.graphics.MasterPanel;
 import javax.swing.JFrame;
+import javax.swing.BoxLayout;
 
 public class Frame extends JFrame {
 
@@ -13,6 +14,7 @@ public class Frame extends JFrame {
         this.setSize(width, height);
     
         MasterPanel mpanel = new MasterPanel();
+        mpanel.setLayout(new BoxLayout(mpanel, BoxLayout.Y_AXIS));
         this.add(mpanel);
 
     }
