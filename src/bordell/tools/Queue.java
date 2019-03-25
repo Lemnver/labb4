@@ -23,4 +23,7 @@ public class Queue {
         model.remove(0);
         return ret;
     }
+    public Boolean isEmpty(){
+        return model.isEmpty();
+    }
 }

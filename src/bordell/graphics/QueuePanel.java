@@ -79,17 +79,20 @@ public class QueuePanel extends SubPanel {
         qpanel2.add(qbutton2);
         this.add(qpanel2);
     }
-    // pre:
+    // pre: !queue.isEmpty()
     // post: Queue.pop();
     public void serveCustomer(Queue queue){
         // removes customer from Queue
-        Customer cust = queue.pop(); 
-        String title = "Customer Served";
-        String message = "Name: " + cust.getName() + 
-            "\nPussar: " + cust.getPussar() + 
-            "\nKramar" + cust.getKramar() + 
-            "\nXXX: " + cust.getXXX();
-        JOptionPane.showMessageDialog(null, message, title, JOptionPane.ERROR_MESSAGE);
+        if (!queue.isEmpty()){
+            Customer cust = queue.pop(); 
+            String title = "Customer Served";
+            String message = "Name: " + cust.getName() + 
+                "\nPussar: " + cust.getPussar() + 
+                "\nKramar" + cust.getKramar() + 
+                "\nXXX: " + cust.getXXX();
+            JOptionPane.showMessageDialog(null, message, title, JOptionPane.ERROR_MESSAGE);
+        }
+
     }
     public Queue getFirstQueue (){
         return queue1;
