@@ -27,6 +27,7 @@ public class Customer {
         return xxx;
     }
     public String toString(){
-        return name;
+        String custDesc = getName() + " - Pussar:" + getPussar() + " Kramar:" + getKramar() + " XXX: " + getXXX(); 
+        return custDesc;
     }
 }
