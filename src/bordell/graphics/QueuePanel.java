@@ -31,7 +31,6 @@ public class QueuePanel extends SubPanel {
         model1 = new DefaultListModel<Customer>();
         queue1 = new Queue(model1);
         list1 = new JList(model1);
-        model1.add(0, new Customer("Edna", 1, 2, 3));
         // panel that holds all components for its queue
         JScrollPane pane1 = new JScrollPane(list1);
         JPanel qpanel1 = new SubPanel();
@@ -60,7 +59,6 @@ public class QueuePanel extends SubPanel {
         model2 = new DefaultListModel<Customer>();
         queue2 = new Queue(model2);
         list2 = new JList(model2);
-        model2.add(0, new Customer("Edna", 2, 2, 3));
         // panel that holds all components for its queue
         JScrollPane pane2 = new JScrollPane(list2);
         JPanel qpanel2 = new SubPanel();

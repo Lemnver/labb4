@@ -26,7 +26,6 @@ public class LobbyPanel extends JPanel {
         
         // create scrollable JList
         model = new DefaultListModel<Customer>();
-        model.add(0, new Customer("Edna", 1, 2, 3));
         list = new JList(model);
         JScrollPane pane = new JScrollPane(list);
         
