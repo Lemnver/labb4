@@ -16,6 +16,7 @@ public class Frame extends JFrame {
         MasterPanel mpanel = new MasterPanel();
         mpanel.setLayout(new BoxLayout(mpanel, BoxLayout.Y_AXIS));
         this.add(mpanel);
+        this.setVisible(true);
 
     }
 }

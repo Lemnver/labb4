@@ -38,7 +38,7 @@ public class MasterPanel extends JPanel {
 			JLabel sign = new JLabel(icon);
             this.add(sign);
 		} catch (IOException e) {
-			e.printStackTrace();
+            System.out.println("Logo not found");
 		}        
         this.add(cust_panel);
         this.add(lobby_panel);
